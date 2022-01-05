@@ -33,16 +33,10 @@ config = {
 };
 
 var path = {
-	styles: [
-		config.nodeDir + "slick-carousel/slick/slick.css", // slick css
-		"assets/plugins/jquery.fancybox.css", // fancybox popup css
-		"assets/scss/**/style.scss",
-	],
+	styles: ["assets/scss/**/style.scss"],
 	scripts: [
 		config.nodeDir + "jquery/dist/jquery.js",
 		config.nodeDir + "bootstrap/dist/js/bootstrap.min.js", // bootstrap js
-		config.nodeDir + "@fancyapps/fancybox/dist/jquery.fancybox.js", // fancybox popup js
-		config.nodeDir + "slick-carousel/slick/slick.js", // slick js
 		"assets/js/setting.js", // all setting js
 	],
 	fonts: ["assets/fonts/**/*.*"],

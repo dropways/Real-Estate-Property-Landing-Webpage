@@ -1,6 +1,7 @@
 .header-wrap {
 	position: relative;
 	height: 134px;
+	@include transition(all 0.3s ease-in-out);
 	header {
 		position: fixed;
 		top: 0;
@@ -10,6 +11,7 @@
 		display: flex;
 		align-items: center;
 		z-index: 123;
+		@include transition(all 0.3s ease-in-out);
 	}
 	.container {
 		display: flex;
@@ -47,6 +49,14 @@
 					}
 				}
 			}
+		}
+	}
+	&.shrink-nav {
+		height: 90px;
+		header {
+			height: 90px;
+			background: $color_link_water;
+			@include box-shadow(0px 17px 50px rgba(143, 144, 166, 0.32));
 		}
 	}
 }

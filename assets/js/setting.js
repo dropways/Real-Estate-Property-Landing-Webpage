@@ -1,3 +1,10 @@
+jQuery(window).on("scroll load", function () {
+	if ($(this).scrollTop() > 0) {
+		$(".header-wrap").addClass("shrink-nav");
+	} else {
+		$(".header-wrap").removeClass("shrink-nav");
+	}
+});
 jQuery(document).ready(function () {
 	/*==============================================================*/
 	// click to scroll section start
