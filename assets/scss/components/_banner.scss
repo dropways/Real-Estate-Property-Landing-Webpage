@@ -1,0 +1,40 @@
+.banner-wrap {
+	position: relative;
+	padding-bottom: 50px;
+	.container {
+		max-width: 1330px;
+	}
+	.banner-box {
+		position: relative;
+		background: $color_link_water;
+		padding: 90px;
+		@include border-radius(50px);
+		&__img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			@include border-radius(50px);
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&__content {
+			position: relative;
+			z-index: 1;
+		}
+		&__title {
+			max-width: 490px;
+			padding-bottom: 38px;
+		}
+		&__txt {
+			color: $color_comet;
+			max-width: 470px;
+			padding-bottom: 60px;
+		}
+	}
+}

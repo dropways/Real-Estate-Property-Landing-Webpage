@@ -1,0 +1,83 @@
+.form-check {
+    padding-left: 30px;
+    min-height: 20px;
+    .form-check-input {
+        margin-left: -30px;
+    }
+}
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    border-color: $input-border-color;
+    margin-top: 0;
+    box-shadow: none;
+    @include border-radius(4px);
+    @include transition(all 0.3s ease-in-out);
+    &:hover {
+        border: 1px solid $primary;
+        @include box-shadow(inset 0 0 0 1px $primary);
+    }
+    &:checked {
+        &:focus {
+            border: 1px solid $primary;
+        }
+    }
+    &:focus {
+        box-shadow: none;
+        border: 1px solid $input-border-color;
+        &:hover {
+            @include box-shadow(inset 0 0 0 1px $primary);
+        }
+    }
+    &.secondary-checkbox {
+        &:hover {
+            border: 1px solid $secondary;
+            @include box-shadow(inset 0 0 0 1px $secondary);
+        }
+        &:checked {
+            background-color: $secondary;
+            border-color: $secondary;
+            &:focus {
+                border: 1px solid $secondary;
+            }
+        }
+        &:focus {
+            box-shadow: none;
+            border: 1px solid $input-border-color;
+            &:hover {
+                @include box-shadow(inset 0 0 0 1px $secondary);
+            }
+        }
+    }
+    &.skyblue-checkbox {
+        &:hover {
+            border: 1px solid $skyblue;
+            @include box-shadow(inset 0 0 0 1px $skyblue);
+        }
+        &:checked {
+            background-color: $skyblue;
+            border-color: $skyblue;
+            &:focus {
+                border: 1px solid $skyblue;
+            }
+        }
+        &:focus {
+            box-shadow: none;
+            border: 1px solid $input-border-color;
+            &:hover {
+                @include box-shadow(inset 0 0 0 1px $skyblue);
+            }
+        }
+    }
+    &[type="checkbox"] {
+        @include border-radius(4px);
+    }
+}
+.form-check-label {
+    font-size: 14px;
+    color: $gray-700;
+    a {
+        color: $secondary;
+        font-weight: 700;
+    }
+}

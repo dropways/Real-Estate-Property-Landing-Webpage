@@ -1,0 +1,161 @@
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+// @include border-radius(4px);
+
+@mixin transition($args...) {
+	transition: $args;
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+}
+// @include transition(all 0.3s ease-in-out);
+
+@mixin box-shadow($args...) {
+	box-shadow: $args;
+	-webkit-box-shadow: $args;
+	-moz-box-shadow: $args;
+}
+// @include box-shadow();
+
+@mixin transform-rotate($args...) {
+	-webkit-transform: rotate($args);
+	-moz-transform: rotate($args);
+	-o-transform: rotate($args);
+	-ms-transform: rotate($args);
+	transform: rotate($args);
+}
+// @include transform-rotate();
+
+@mixin transform($args...) {
+	-webkit-transform: ($args);
+	-moz-transform: ($args);
+	-ms-transform: ($args);
+	-o-transform: ($args);
+	transform: ($args);
+}
+// @include transform();
+
+@mixin transition-delay($args...) {
+	-webkit-transition-delay: ($args);
+	-moz-transition-delay: ($args);
+	-o-transition-delay: ($args);
+	transition-delay: ($args);
+}
+// @include transition-delay();
+
+@mixin optional-at-root($sel) {
+	@at-root #{if(not &, $sel, selector-append(&, $sel))} {
+		@content;
+	}
+}
+
+@mixin placeholder {
+	@include optional-at-root("::-webkit-input-placeholder") {
+		@content;
+	}
+
+	@include optional-at-root(":-moz-placeholder") {
+		@content;
+	}
+
+	@include optional-at-root("::-moz-placeholder") {
+		@content;
+	}
+
+	@include optional-at-root(":-ms-input-placeholder") {
+		@content;
+	}
+}
+// @include placeholder{value};
+
+// media min & max
+@mixin breakpoint($max_min, $point) {
+	@if $max_min==min {
+		@media (min-width: ($point + px)) {
+			@content;
+		}
+	}
+	@if $max_min==max {
+		@media (max-width: ($point + px)) {
+			@content;
+		}
+	}
+}
+// @include breakpoint( max , 767){
+// 	padding: 10px 25px;
+// }
+// @include breakpoint( min , 1366){
+// 	padding: 15px 35px;
+// }
+
+@mixin breakpoint-between($lower, $upper) {
+	@media (min-width: ($lower + px)) and (max-width: ($upper + px)) {
+		@content;
+	}
+}
+
+// @include breakpoint-between( 1025 , 1140){
+// 	width: 524px
+// }
+
+// max width mixin
+$max-width-map: (
+	200: 200px,
+	250: 250px,
+	300: 300px,
+	350: 350px,
+	400: 400px,
+	450: 450px,
+	500: 500px,
+	550: 550px,
+	600: 600px,
+	650: 650px,
+	700: 700px,
+	750: 750px,
+	800: 800px,
+	850: 850px,
+	900: 900px,
+	950: 950px,
+	1000: 1000px,
+	1050: 1050px,
+);
+
+@each $name, $width in $max-width-map {
+	.mx-w-#{$name} {
+		max-width: $width;
+	}
+}
+
+// opacity mixin
+$opacity-map: (
+	0: 0,
+	05: 0.05,
+	10: 0.1,
+	15: 0.15,
+	20: 0.2,
+	25: 0.25,
+	30: 0.3,
+	35: 0.35,
+	40: 0.4,
+	45: 0.45,
+	50: 0.5,
+	55: 0.55,
+	60: 0.6,
+	65: 0.65,
+	70: 0.7,
+	80: 0.8,
+	85: 0.85,
+	90: 0.9,
+	95: 0.95,
+	100: 1,
+);
+
+@each $name, $opacity in $opacity-map {
+	.opacity-#{$name} {
+		opacity: $opacity;
+	}
+}

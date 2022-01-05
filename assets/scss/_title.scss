@@ -1,0 +1,83 @@
+.h1 {
+	font-size: 56px;
+	font-weight: 600;
+	color: $dark-color;
+}
+.h1.large {
+	font-size: 84px;
+	line-height: 1.2;
+	@include breakpoint(max, 1024) {
+		font-size: 50px;
+	}
+	@include breakpoint(max, 767) {
+		font-size: 40px;
+	}
+}
+.h2 {
+	font-size: 38px;
+	font-weight: 600;
+	color: $dark-color;
+	@include breakpoint(max, 1024) {
+		font-size: 40px;
+	}
+	@include breakpoint(max, 767) {
+		font-size: 34px;
+	}
+}
+.h3 {
+	font-size: 28px;
+	font-weight: 600;
+	color: $dark-color;
+	@include breakpoint(max, 767) {
+		font-size: 30px;
+	}
+}
+.h4 {
+	font-size: 20px;
+	font-weight: 600;
+	color: $dark-color;
+	@include breakpoint(max, 767) {
+		font-size: 22px;
+	}
+}
+.h5 {
+	font-size: 18px;
+	font-weight: 600;
+	color: $dark-color;
+}
+
+.text-small {
+	font-size: 14px;
+	line-height: 26px;
+}
+.text-ex-small {
+	font-size: 12px;
+	line-height: 1.2;
+}
+.text-large {
+	font-size: 18px;
+	line-height: 1.6;
+}
+.text-ex-large {
+	font-size: 22px;
+	line-height: 36px;
+}
+
+.fw-medium {
+	font-weight: 500;
+}
+
+.title-line {
+	padding-bottom: 20px;
+	position: relative;
+	&:after {
+		content: "";
+		width: 30px;
+		height: 4px;
+		@include border-radius(8px);
+		position: absolute;
+		left: 0;
+		bottom: 5px;
+		background-color: currentColor;
+	}
+}

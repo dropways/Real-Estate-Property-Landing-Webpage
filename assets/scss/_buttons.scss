@@ -1,0 +1,178 @@
+.btn {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	box-shadow: none;
+	@include transition(all 0.3s ease-in-out);
+	&:focus,
+	&:hover,
+	&:active {
+		box-shadow: none;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+	&.btn-lg {
+		padding: 15px 24px;
+		font-size: 14px;
+	}
+	&.btn-sm {
+		font-size: 14px;
+	}
+	&.btn-xs {
+		padding: 4px 18px;
+		font-size: 12px;
+		&.btn-txt-icon {
+			i {
+				font-size: 16px;
+			}
+		}
+	}
+	&.d-block,
+	&.btn-block {
+		width: 100%;
+		text-align: center;
+	}
+	&.btn-md-block {
+		@include breakpoint(max, 767) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+	&.btn-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 52px;
+		height: 52px;
+		padding: 0;
+		line-height: 1;
+		font-size: 20px;
+		&.btn-sm {
+			width: 36px;
+			height: 36px;
+			font-size: 18px;
+		}
+		&.btn-xs {
+			width: 30px;
+			height: 30px;
+			font-size: 16px;
+		}
+	}
+	&.btn-no-arrow {
+		&:after {
+			display: none;
+		}
+	}
+	&.btn-clean {
+		background: transparent !important;
+		border: transparent !important;
+	}
+	&.btn-primary {
+		color: $white;
+	}
+	&.btn-outline-primary {
+		&:hover {
+			color: $white;
+		}
+	}
+	&.btn-secondary {
+		color: $white;
+	}
+	&.btn-success {
+		color: $white;
+	}
+	&.btn-outline-success {
+		&:hover {
+			color: $white;
+		}
+	}
+	&.btn-danger {
+		color: $white;
+	}
+	&.btn-outline-danger {
+		&:hover {
+			color: $white;
+		}
+	}
+	&.btn-warning {
+		color: $white;
+	}
+	&.btn-outline-warning {
+		&:hover {
+			color: $white;
+		}
+	}
+	&.btn-txt-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		i {
+			font-size: 18px;
+			line-height: 1;
+			margin-right: 8px;
+			&:before {
+				display: block;
+			}
+		}
+		&.btn-icon-right {
+			i {
+				margin-left: 8px;
+				margin-right: 0;
+			}
+		}
+	}
+	&.btn-rounded {
+		@include border-radius(48px);
+	}
+	&.btn-flate {
+		@include border-radius(0px);
+	}
+
+	&.btn-google {
+		background: $brand-google;
+		color: $white;
+	}
+	&.btn-facebook {
+		background: $brand-facebook;
+		color: $white;
+	}
+	&.btn-twitter {
+		background: $brand-twitter;
+		color: $white;
+	}
+	&.btn-linkedin {
+		background: $brand-linkedin;
+		color: $white;
+	}
+	&.btn-instagram {
+		background: $brand-instagram;
+		color: $white;
+	}
+	&.btn-github {
+		background: $brand-github;
+		color: $white;
+	}
+	&.btn-pinterest {
+		background: $brand-pinterest;
+		color: $white;
+	}
+	&.btn-whatsapp {
+		background: $brand-whatsapp;
+		color: $white;
+	}
+	&.btn-behance {
+		background: $brand-behance;
+		color: $white;
+	}
+	&.btn-dribbble {
+		background: $brand-dribbble;
+		color: $white;
+	}
+	&.btn-youtube {
+		background: $brand-youtube;
+		color: $white;
+	}
+}

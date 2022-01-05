@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "Lufga";
+	src: url("../fonts/Lufga-Bold.woff2") format("woff2"),
+		url("../fonts/Lufga-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lufga";
+	src: url("../fonts/Lufga-Regular.woff2") format("woff2"),
+		url("../fonts/Lufga-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lufga";
+	src: url("../fonts/Lufga-SemiBold.woff2") format("woff2"),
+		url("../fonts/Lufga-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lufga";
+	src: url("../fonts/Lufga-Medium.woff2") format("woff2"),
+		url("../fonts/Lufga-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}

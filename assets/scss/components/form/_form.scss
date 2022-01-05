@@ -1,0 +1,148 @@
+@import "./checkbox";
+
+.form-wrap {
+	.form-group {
+		margin-bottom: 20px;
+	}
+	.form-label {
+		font-size: 14px;
+		font-weight: 500;
+		color: $input-label-color;
+		margin-bottom: 6px;
+	}
+	.form-control {
+		height: 52px;
+		width: 100%;
+		padding: 0px 20px;
+		border: 1px solid $input-border-color;
+		font-size: 14px;
+		font-weight: 500;
+		color: $dark;
+		@include border-radius(6px);
+		@include transition(all 0.3s ease-in-out);
+		@include placeholder {
+			color: $input-label-color;
+		}
+		&:hover {
+			border-color: $input-border-hover-color;
+		}
+		&:focus {
+			border: 1px solid $primary;
+			box-shadow: none;
+			// @include box-shadow(inset 0 0 0 1px $primary);
+		}
+		&.invalid {
+			border: 1px solid $red;
+			@include box-shadow(inset 0 0 0 1px $red);
+		}
+	}
+	textarea {
+		&.form-control {
+			height: 160px;
+			padding-top: 15px;
+		}
+	}
+	select {
+		&.form-control {
+			background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.7952 3.35258L7.00067 9.14854L1.20611 3.35188C0.929841 3.07562 0.482943 3.07562 0.206677 3.35188C-0.0688922 3.62815 -0.0688922 4.07575 0.206677 4.35201L6.50063 10.6481C6.7762 10.9243 7.2238 10.9243 7.49937 10.6481L13.7933 4.35207C14.0689 4.0758 14.0689 3.62751 13.7933 3.35124C13.5185 3.07631 13.0708 3.07631 12.7952 3.35258Z' fill='%235A5C69'/%3E%3C/svg%3E%0A");
+			background-position: center right 15px;
+			background-repeat: no-repeat;
+		}
+	}
+	.form-text {
+		font-size: 15px;
+		font-weight: 400;
+		color: $gray-900;
+		a {
+			color: $primary;
+			text-decoration: underline;
+			display: inline;
+			font-weight: 500;
+		}
+	}
+	.form-action {
+		padding-top: 15px;
+	}
+	.form-invalid-feedback {
+		color: $red;
+		font-size: 14px;
+		padding: 10px 0 10px 0;
+		font-weight: 500;
+	}
+	.input-group__item {
+		position: relative;
+		&.prepend {
+			.form-control {
+				padding-left: 60px;
+			}
+			.prepend__item {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 54px;
+				height: 54px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0;
+				border: 0;
+				background: transparent;
+				color: $gray-800;
+				svg {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+}
+
+.login-with-google {
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 13px 10px;
+		border: 1px solid $input-border-color;
+		@include border-radius(30px);
+		@include transition(all 0.3s ease-in-out);
+		&:hover {
+			background: $primary;
+			border: 1px solid $primary;
+			@include box-shadow(inset 0 0 0 1px $primary);
+		}
+	}
+	&__icon {
+		margin-right: 15px;
+	}
+	&__text {
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+
+.or-line {
+	position: relative;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	color: $gray-700;
+	&:after {
+		content: "";
+		height: 1px;
+		background: $input-border-color;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -1px;
+		opacity: 0.5;
+	}
+	span {
+		display: inline-block;
+		background: $white;
+		position: relative;
+		z-index: 1;
+		padding: 0px 10px 2px;
+	}
+}
