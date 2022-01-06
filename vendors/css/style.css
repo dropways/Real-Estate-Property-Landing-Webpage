@@ -10413,10 +10413,12 @@ button:focus {
     line-height: 1;
     font-size: 20px;
     font-weight: 400; }
+    .btn.btn-icon.btn-md {
+      width: 40px;
+      height: 40px; }
     .btn.btn-icon.btn-sm, .btn-group-sm > .btn.btn-icon {
       width: 36px;
-      height: 36px;
-      font-size: 18px; }
+      height: 36px; }
     .btn.btn-icon.btn-xs {
       width: 30px;
       height: 30px;
@@ -10484,7 +10486,7 @@ button:focus {
     background: #0a66c2;
     color: #fff; }
   .btn.btn-instagram {
-    background: #c32aa3;
+    background: #ec3397;
     color: #fff; }
   .btn.btn-github {
     background: #000000;
@@ -10580,6 +10582,47 @@ button:focus {
       box-shadow: 0px 17px 50px rgba(143, 144, 166, 0.32);
       -webkit-box-shadow: 0px 17px 50px rgba(143, 144, 166, 0.32);
       -moz-box-shadow: 0px 17px 50px rgba(143, 144, 166, 0.32); }
+
+.footer-wrap {
+  padding-top: 50px;
+  padding-bottom: 60px; }
+
+.quick-links {
+  padding-top: 15px; }
+  .quick-links ul li {
+    padding-bottom: 20px; }
+    .quick-links ul li a {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 28px;
+      color: #110229;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out; }
+      .quick-links ul li a:hover {
+        color: #1daeff; }
+
+.subscribe-form-wrap {
+  padding-top: 15px; }
+  .subscribe-form-wrap .subscribe-form {
+    position: relative; }
+    .subscribe-form-wrap .subscribe-form .form-group {
+      position: relative; }
+      .subscribe-form-wrap .subscribe-form .form-group .form-control {
+        padding-right: 55px; }
+      .subscribe-form-wrap .subscribe-form .form-group .cta {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        height: 52px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
 
 .banner-wrap {
   position: relative;
@@ -10906,9 +10949,9 @@ button:focus {
   font-size: 14px;
   font-weight: 400;
   color: #8f90a6;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -11045,3 +11088,24 @@ button:focus {
     position: relative;
     z-index: 1;
     padding: 0px 10px 2px; }
+
+.social-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .social-list ul li:not(:last-child) {
+    margin-right: 28px; }
+  .social-list ul li a {
+    font-size: 24px;
+    line-height: 1;
+    display: block; }
+    .social-list ul li a i {
+      display: block; }
+    .social-list ul li a.facebook {
+      color: #3b5998; }
+    .social-list ul li a.twitter {
+      color: #1da1f2; }
+    .social-list ul li a.instagram {
+      color: #ec3397; }
+    .social-list ul li a.linkedin {
+      color: #0a66c2; }

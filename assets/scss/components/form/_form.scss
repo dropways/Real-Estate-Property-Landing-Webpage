@@ -18,7 +18,7 @@
 		font-size: 14px;
 		font-weight: 400;
 		color: $color_manatee;
-		@include border-radius(6px);
+		@include border-radius(15px);
 		@include transition(all 0.3s ease-in-out);
 		@include placeholder {
 			color: $color_manatee;

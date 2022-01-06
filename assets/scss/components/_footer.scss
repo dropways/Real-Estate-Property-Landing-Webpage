@@ -1,0 +1,44 @@
+.footer-wrap {
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.quick-links {
+	padding-top: 15px;
+	ul {
+		li {
+			padding-bottom: 20px;
+			a {
+				display: inline-block;
+				font-size: 18px;
+				line-height: 28px;
+				color: $dark-color;
+				@include transition(all 0.3s ease-in-out);
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.subscribe-form-wrap {
+	padding-top: 15px;
+	.subscribe-form {
+		position: relative;
+		.form-group {
+			position: relative;
+			.form-control {
+				padding-right: 55px;
+			}
+			.cta {
+				position: absolute;
+				right: 10px;
+				top: 0px;
+				height: 52px;
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}

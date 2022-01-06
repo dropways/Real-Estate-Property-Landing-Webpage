@@ -1,0 +1,30 @@
+.social-list {
+	ul {
+		display: flex;
+		li {
+			&:not(:last-child) {
+				margin-right: 28px;
+			}
+			a {
+				font-size: 24px;
+				line-height: 1;
+				display: block;
+				i {
+					display: block;
+				}
+				&.facebook {
+					color: $brand-facebook;
+				}
+				&.twitter {
+					color: $brand-twitter;
+				}
+				&.instagram {
+					color: $brand-instagram;
+				}
+				&.linkedin {
+					color: $brand-linkedin;
+				}
+			}
+		}
+	}
+}
