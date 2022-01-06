@@ -6,6 +6,9 @@
 	letter-spacing: 0.1em;
 	box-shadow: none;
 	@include transition(all 0.3s ease-in-out);
+	@include breakpoint(max, 1024) {
+		font-size: 14px;
+	}
 	&:focus,
 	&:hover,
 	&:active {

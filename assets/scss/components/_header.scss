@@ -26,15 +26,49 @@
 	.header-right {
 		display: flex;
 		align-items: center;
+		@include breakpoint(max, 767) {
+			position: fixed;
+			right: -280px;
+			top: 0;
+			width: 280px;
+			height: 100%;
+			background: $white;
+			display: block;
+			padding: 30px;
+			overflow: auto;
+			@include transition(all 0.3s ease-in-out);
+		}
 		.cta {
 			padding-left: 30px;
+			@include breakpoint(max, 1024) {
+				padding-left: 15px;
+			}
+			@include breakpoint(max, 767) {
+				padding-left: 0;
+				padding-top: 20px;
+			}
+			.btn {
+				@include breakpoint(max, 767) {
+					display: block;
+					width: 100%;
+				}
+			}
 		}
 	}
 	.menu {
 		ul {
 			display: flex;
+			@include breakpoint(max, 767) {
+				display: block;
+			}
 			li {
 				padding: 0 30px;
+				@include breakpoint(max, 1024) {
+					padding: 0 15px;
+				}
+				@include breakpoint(max, 767) {
+					padding: 15px 0;
+				}
 				a {
 					font-size: 16px;
 					line-height: 20px;
@@ -46,6 +80,12 @@
 					&:hover,
 					&.active {
 						color: $primary;
+					}
+					@include breakpoint(max, 1024) {
+						font-size: 14px;
+					}
+					@include breakpoint(max, 767) {
+						font-size: 16px;
 					}
 				}
 			}

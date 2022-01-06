@@ -19,6 +19,9 @@
 	padding: 30px;
 	@include border-radius(30px);
 	@include transition(all 0.3s ease-in-out);
+	@include breakpoint(max, 1024) {
+		flex-wrap: wrap;
+	}
 	&:hover {
 		border-color: $primary;
 		@include transform(translate(0px, -10px));
@@ -27,6 +30,10 @@
 	&__left {
 		width: 158px;
 		flex-shrink: 0;
+		@include breakpoint(max, 1024) {
+			width: 100%;
+			height: 158px;
+		}
 		img {
 			width: 100%;
 			height: 100%;
@@ -39,6 +46,10 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		@include breakpoint(max, 1024) {
+			padding-left: 0;
+			padding-top: 20px;
+		}
 	}
 	&__title {
 		padding-bottom: 18px;
