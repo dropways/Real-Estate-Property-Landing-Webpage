@@ -38,3 +38,39 @@
 		}
 	}
 }
+
+.banner-tab-wrap {
+	position: relative;
+	z-index: 1;
+	max-width: 920px;
+	.nav {
+		padding-left: 20px;
+		.tab-item {
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			color: $color_manatee;
+			padding: 8px 29px;
+			border: 0;
+			background: transparent;
+			@include border-radius(15px 15px 0 0);
+			@include transition(all 0.3s ease-in-out);
+			&:hover {
+				color: $dark-color;
+			}
+			&.active {
+				background: $white;
+				color: $dark-color;
+			}
+		}
+	}
+	.tab-content {
+		background: rgba($white, 0.8);
+		box-shadow: 0px 30px 60px -15px rgba(143, 144, 188, 0.15);
+		backdrop-filter: blur(3px);
+		padding: 20px 30px;
+		@include border-radius(20px 20px 20px 20px);
+	}
+}

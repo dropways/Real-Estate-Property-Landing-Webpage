@@ -7,7 +7,7 @@
 	.form-label {
 		font-size: 14px;
 		font-weight: 500;
-		color: $input-label-color;
+		color: $dark-color;
 		margin-bottom: 6px;
 	}
 	.form-control {
@@ -16,12 +16,12 @@
 		padding: 0px 20px;
 		border: 1px solid $input-border-color;
 		font-size: 14px;
-		font-weight: 500;
-		color: $dark;
+		font-weight: 400;
+		color: $color_manatee;
 		@include border-radius(6px);
 		@include transition(all 0.3s ease-in-out);
 		@include placeholder {
-			color: $input-label-color;
+			color: $color_manatee;
 		}
 		&:hover {
 			border-color: $input-border-hover-color;

@@ -49,6 +49,7 @@
 		<div class="banner-wrap">
 			<div class="container">
 				<div class="banner-box">
+					<!-- Banner Image Start -->
 					<div class="banner-box__img">
 						<img
 							src="vendors/images/banner-image.jpg"
@@ -57,6 +58,8 @@
 							alt=""
 						/>
 					</div>
+					<!-- Banner Image End -->
+					<!-- Banner Content Start -->
 					<div class="banner-box__content">
 						<h1 class="banner-box__title h1">
 							Easy way to find a perfect property
@@ -66,11 +69,235 @@
 							real estate.
 						</div>
 					</div>
+					<!-- Banner Content End -->
+					<!-- Banner Tab Start  -->
+					<div class="banner-tab-wrap">
+						<!-- Tab Nav Start -->
+						<ul class="nav" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button
+									class="tab-item active"
+									data-bs-toggle="pill"
+									data-bs-target="#rent"
+									type="button"
+									role="tab"
+									aria-selected="true"
+								>
+									Rent
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button
+									class="tab-item"
+									data-bs-toggle="pill"
+									data-bs-target="#buy"
+									type="button"
+									role="tab"
+									aria-selected="false"
+								>
+									Buy
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button
+									class="tab-item"
+									data-bs-toggle="pill"
+									data-bs-target="#sell"
+									type="button"
+									role="tab"
+									aria-selected="false"
+								>
+									Sell
+								</button>
+							</li>
+						</ul>
+						<!-- Tab Nav End -->
+						<!-- Tab Content Start -->
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="rent" role="tabpanel">
+								<form class="form-wrap">
+									<div class="row align-items-end">
+										<div class="col-md-10">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group mb-md-0">
+														<label class="form-label">Location</label>
+														<select class="form-control">
+															<option>Select Your City</option>
+															<option>Amsterdam</option>
+															<option>Barcelona</option>
+															<option>Beijing</option>
+															<option>Beirut</option>
+															<option>Bergen</option>
+															<option>Copenhagen</option>
+															<option>Doha</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group mb-md-0">
+														<label class="form-label">Property Type</label>
+														<select class="form-control">
+															<option>Choose Property Type</option>
+															<option>Residential Apartment</option>
+															<option>Independent/Builder Floor</option>
+															<option>Independent House/Villa</option>
+															<option>Residential Land</option>
+															<option>1 RK/ Studio Apartment</option>
+															<option>Farm House</option>
+															<option>Serviced Apartments</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group mb-md-0">
+														<label class="form-label">Price Range</label>
+														<select class="form-control">
+															<option>Choose Price Range</option>
+															<option>$0-1000</option>
+															<option>$1000-$2000</option>
+															<option>$2000-$3000</option>
+															<option>$3000-$4000</option>
+															<option>$4000-$5000</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2 d-md-flex">
+											<button class="btn btn-primary btn-icon ms-auto">
+												<i class="ri-search-2-line"></i>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="buy" role="tabpanel">
+								<form class="form-wrap">
+									<div class="row align-items-end">
+										<div class="col-md-10">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group mb-md-0">
+														<label class="form-label">Location</label>
+														<select class="form-control">
+															<option>Select Your City</option>
+															<option>Amsterdam</option>
+															<option>Barcelona</option>
+															<option>Beijing</option>
+															<option>Beirut</option>
+															<option>Bergen</option>
+															<option>Copenhagen</option>
+															<option>Doha</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group mb-md-0">
+														<label class="form-label">Property Type</label>
+														<select class="form-control">
+															<option>Choose Property Type</option>
+															<option>Residential Apartment</option>
+															<option>Independent/Builder Floor</option>
+															<option>Independent House/Villa</option>
+															<option>Residential Land</option>
+															<option>1 RK/ Studio Apartment</option>
+															<option>Farm House</option>
+															<option>Serviced Apartments</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group mb-md-0">
+														<label class="form-label">Price Range</label>
+														<select class="form-control">
+															<option>Choose Price Range</option>
+															<option>$0-1000</option>
+															<option>$1000-$2000</option>
+															<option>$2000-$3000</option>
+															<option>$3000-$4000</option>
+															<option>$4000-$5000</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2 d-md-flex">
+											<button class="btn btn-primary btn-icon ms-auto">
+												<i class="ri-search-2-line"></i>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="sell" role="tabpanel">
+								<form class="form-wrap">
+									<div class="row align-items-end">
+										<div class="col-md-10">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group mb-md-0">
+														<label class="form-label">Location</label>
+														<select class="form-control">
+															<option>Select Your City</option>
+															<option>Amsterdam</option>
+															<option>Barcelona</option>
+															<option>Beijing</option>
+															<option>Beirut</option>
+															<option>Bergen</option>
+															<option>Copenhagen</option>
+															<option>Doha</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group mb-md-0">
+														<label class="form-label">Property Type</label>
+														<select class="form-control">
+															<option>Choose Property Type</option>
+															<option>Residential Apartment</option>
+															<option>Independent/Builder Floor</option>
+															<option>Independent House/Villa</option>
+															<option>Residential Land</option>
+															<option>1 RK/ Studio Apartment</option>
+															<option>Farm House</option>
+															<option>Serviced Apartments</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group mb-md-0">
+														<label class="form-label">Price Range</label>
+														<select class="form-control">
+															<option>Choose Price Range</option>
+															<option>$0-1000</option>
+															<option>$1000-$2000</option>
+															<option>$2000-$3000</option>
+															<option>$3000-$4000</option>
+															<option>$4000-$5000</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2 d-md-flex">
+											<button class="btn btn-primary btn-icon ms-auto">
+												<i class="ri-search-2-line"></i>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!-- Tab Content End -->
+					</div>
+					<!-- Banner Tab End  -->
 				</div>
 			</div>
 		</div>
 
 		<div class="countries-wrap">
+			<!-- Countries Section Start -->
 			<div class="container">
 				<div class="countries-wrap__title">
 					<div class="row justify-content-center">
@@ -80,6 +307,213 @@
 							</h2>
 						</div>
 					</div>
+				</div>
+				<div class="countries-list">
+					<!-- Countries List Start -->
+					<ul class="row">
+						<li class="col-md-3 col-sm-6">
+							<div class="countries-box">
+								<div class="countries-box__title">America</div>
+								<div class="countries-box__img">
+									<img src="vendors/images/countrie-img-1.jpg" alt="" />
+								</div>
+							</div>
+						</li>
+						<li class="col-md-3 col-sm-6">
+							<div class="countries-box">
+								<div class="countries-box__title">Spain</div>
+								<div class="countries-box__img">
+									<img src="vendors/images/countrie-img-2.jpg" alt="" />
+								</div>
+							</div>
+						</li>
+						<li class="col-md-3 col-sm-6">
+							<div class="countries-box">
+								<div class="countries-box__title">London</div>
+								<div class="countries-box__img">
+									<img src="vendors/images/countrie-img-3.jpg" alt="" />
+								</div>
+							</div>
+						</li>
+						<li class="col-md-3 col-sm-6">
+							<div class="countries-box">
+								<div class="countries-box__title">France</div>
+								<div class="countries-box__img">
+									<img src="vendors/images/countrie-img-4.jpg" alt="" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- Countries List End -->
+				</div>
+			</div>
+		</div>
+		<!-- Countries Section End -->
+
+		<div class="recently-added-wrap">
+			<div class="container">
+				<div
+					class="recently-added-wrap__title d-md-flex justify-content-between"
+				>
+					<h2 class="h2">Recently Added</h2>
+					<div class="cta">
+						<a href="#" class="btn btn-link">See all</a>
+					</div>
+				</div>
+
+				<div class="property-list">
+					<ul class="row">
+						<li class="col-md-6">
+							<div class="property-box">
+								<div class="property-box__left">
+									<img src="https://picsum.photos/id/163/158/200" alt="" />
+								</div>
+								<div class="property-box__right">
+									<div class="property-box__title h3">
+										<a href="#">103/143 West Street, Crows Nest</a>
+									</div>
+									<div class="property-box__amenities">
+										<span>10 Bedroom</span>
+										<span>150 M</span>
+										<span>2 Garage</span>
+									</div>
+									<div class="property-box__post-price">
+										<div class="property-box__post-by">
+											Posted by <a href="#">X Builder</a>
+										</div>
+										<div class="property-box__price">
+											<span class="badge">$45,545</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col-md-6">
+							<div class="property-box">
+								<div class="property-box__left">
+									<img src="https://picsum.photos/id/174/158/200" alt="" />
+								</div>
+								<div class="property-box__right">
+									<div class="property-box__title h3">
+										<a href="#">103/143 West Street, Crows Nest</a>
+									</div>
+									<div class="property-box__amenities">
+										<span>10 Bedroom</span>
+										<span>150 M</span>
+										<span>2 Garage</span>
+									</div>
+									<div class="property-box__post-price">
+										<div class="property-box__post-by">
+											Posted by <a href="#">X Builder</a>
+										</div>
+										<div class="property-box__price">
+											<span class="badge">$45,545</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col-md-6">
+							<div class="property-box">
+								<div class="property-box__left">
+									<img src="https://picsum.photos/id/164/158/200" alt="" />
+								</div>
+								<div class="property-box__right">
+									<div class="property-box__title h3">
+										<a href="#">103/143 West Street, Crows Nest</a>
+									</div>
+									<div class="property-box__amenities">
+										<span>10 Bedroom</span>
+										<span>150 M</span>
+										<span>2 Garage</span>
+									</div>
+									<div class="property-box__post-price">
+										<div class="property-box__post-by">
+											Posted by <a href="#">X Builder</a>
+										</div>
+										<div class="property-box__price">
+											<span class="badge">$45,545</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col-md-6">
+							<div class="property-box">
+								<div class="property-box__left">
+									<img src="https://picsum.photos/id/220/158/200" alt="" />
+								</div>
+								<div class="property-box__right">
+									<div class="property-box__title h3">
+										<a href="#">103/143 West Street, Crows Nest</a>
+									</div>
+									<div class="property-box__amenities">
+										<span>10 Bedroom</span>
+										<span>150 M</span>
+										<span>2 Garage</span>
+									</div>
+									<div class="property-box__post-price">
+										<div class="property-box__post-by">
+											Posted by <a href="#">X Builder</a>
+										</div>
+										<div class="property-box__price">
+											<span class="badge">$45,545</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col-md-6">
+							<div class="property-box">
+								<div class="property-box__left">
+									<img src="https://picsum.photos/id/232/158/200" alt="" />
+								</div>
+								<div class="property-box__right">
+									<div class="property-box__title h3">
+										<a href="#">103/143 West Street, Crows Nest</a>
+									</div>
+									<div class="property-box__amenities">
+										<span>10 Bedroom</span>
+										<span>150 M</span>
+										<span>2 Garage</span>
+									</div>
+									<div class="property-box__post-price">
+										<div class="property-box__post-by">
+											Posted by <a href="#">X Builder</a>
+										</div>
+										<div class="property-box__price">
+											<span class="badge">$45,545</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col-md-6">
+							<div class="property-box">
+								<div class="property-box__left">
+									<img src="https://picsum.photos/id/270/158/200" alt="" />
+								</div>
+								<div class="property-box__right">
+									<div class="property-box__title h3">
+										<a href="#">103/143 West Street, Crows Nest</a>
+									</div>
+									<div class="property-box__amenities">
+										<span>10 Bedroom</span>
+										<span>150 M</span>
+										<span>2 Garage</span>
+									</div>
+									<div class="property-box__post-price">
+										<div class="property-box__post-by">
+											Posted by <a href="#">X Builder</a>
+										</div>
+										<div class="property-box__price">
+											<span class="badge">$45,545</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

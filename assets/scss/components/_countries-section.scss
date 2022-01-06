@@ -1,3 +1,42 @@
 .countries-wrap {
 	padding: 50px 0 100px;
+	&__title {
+		padding-bottom: 56px;
+	}
+}
+
+.countries-list {
+	ul {
+		li {
+			padding-bottom: 30px;
+		}
+	}
+}
+
+.countries-box {
+	position: relative;
+	@include transition(all 0.3s ease-in-out);
+	@include border-radius(30px);
+	&:hover {
+		@include transform(translate(0px, -20px));
+		@include box-shadow(0px 17px 50px rgba(143, 144, 166, 0.32));
+	}
+	&__title {
+		position: absolute;
+		width: 100%;
+		top: 48px;
+		left: 0;
+		text-align: center;
+		font-size: 24px;
+		font-weight: 600;
+		color: $dark-color;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+	}
+	&__img {
+		img {
+			width: 100%;
+			@include border-radius(30px);
+		}
+	}
 }

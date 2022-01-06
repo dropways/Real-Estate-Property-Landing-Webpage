@@ -41,6 +41,13 @@
 			text-align: center;
 		}
 	}
+	&.btn-link {
+		text-transform: capitalize;
+		letter-spacing: 0;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 500;
+	}
 	&.btn-icon {
 		display: inline-flex;
 		align-items: center;
@@ -50,6 +57,7 @@
 		padding: 0;
 		line-height: 1;
 		font-size: 20px;
+		font-weight: 400;
 		&.btn-sm {
 			width: 36px;
 			height: 36px;
