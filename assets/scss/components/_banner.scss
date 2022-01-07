@@ -1,6 +1,9 @@
 .banner-wrap {
 	position: relative;
 	padding-bottom: 50px;
+	@include breakpoint(max, 767) {
+		padding-top: 50px;
+	}
 	.container {
 		max-width: 1330px;
 	}
@@ -12,6 +15,9 @@
 		@include breakpoint(max, 991) {
 			padding: 40px 30px;
 			@include border-radius(24px);
+		}
+		@include breakpoint(max, 767) {
+			padding: 40px 15px 15px;
 		}
 		&__img {
 			position: absolute;
@@ -33,6 +39,9 @@
 		&__content {
 			position: relative;
 			z-index: 1;
+			@include breakpoint(max, 767) {
+				padding: 0 15px;
+			}
 		}
 		&__title {
 			max-width: 490px;

@@ -37,7 +37,7 @@
 	font-weight: 600;
 	color: $dark-color;
 	@include breakpoint(max, 767) {
-		font-size: 22px;
+		font-size: 18px;
 	}
 }
 .h5 {

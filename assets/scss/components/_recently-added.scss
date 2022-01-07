@@ -1,5 +1,8 @@
 .recently-added-wrap {
 	padding-bottom: 90px;
+	@include breakpoint(max, 767) {
+		padding-bottom: 20px;
+	}
 	&__title {
 		padding-bottom: 36px;
 	}
@@ -21,6 +24,9 @@
 	@include transition(all 0.3s ease-in-out);
 	@include breakpoint(max, 1024) {
 		flex-wrap: wrap;
+	}
+	@include breakpoint(max, 767) {
+		padding: 15px;
 	}
 	&:hover {
 		border-color: $primary;
@@ -67,11 +73,18 @@
 		font-weight: 500;
 		color: $color_manatee;
 		padding-bottom: 20px;
+		@include breakpoint(max, 767) {
+			font-size: 16px;
+			padding-bottom: 10px;
+		}
 		span {
 			display: inline-block;
 			margin-bottom: 10px;
 			&:not(:last-child) {
 				margin-right: 30px;
+				@include breakpoint(max, 767) {
+					margin-right: 15px;
+				}
 			}
 		}
 	}
@@ -85,6 +98,9 @@
 		font-size: 18px;
 		font-weight: 500;
 		color: $color_manatee;
+		@include breakpoint(max, 767) {
+			font-size: 16px;
+		}
 		a {
 			color: $color_manatee;
 			&:hover {
